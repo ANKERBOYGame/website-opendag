@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styling\css\style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="background-image">
+            <header>
+                <div class="header img">
+                    <img src="styling/img/curio-02-wit-logo-rgb.png" alt="">
+                </div>
+                <nav>
+                    <div class="menu-icon" onhover="toggleMenu()">☰</div>
+                    <ul id="menu">
+                        <li><span class="a" onclick="currentSlide(1)">Home</span></li>   
+                        <li><span class="a" onclick="currentSlide(2)">Blokken indeling</span></li>
+                        <li><span class="a" onclick="currentSlide(3)">Vakken</span></li>         
+                        <li><span class="a" onclick="currentSlide(4)">Rooster</span></li>
+                        <li><span class="a" onclick="currentSlide(5)">Docenten</span></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main>
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade num1">
+                        <div class="numbertext">1 / 5</div>
+                        <h1>Welkom bij de opleiding</h1>
+                        <h1 id="typing-text">Software Delepment!</h1>
+                        <h3>Deze website zorgt ervoor dat jullie hopelijk genoeg informatie krijgen</h3>
+                    </div>
+
+                    <div class="mySlides fade num2">
+                        <div class="numbertext">2 / 5</div>
+                        <h1>De blokken verdeling</h1>
+                        <h3>Versnelbare opleiding van <span class="standardYear">4 jaar</span> naar <span class="fastYear">3 jaar</span ></h3>
+                        <p>
+                            Op deze opleiding is het mogelijk om je opleiding binnen 3 jaar  af te ronden, in plaats van de standaard 4 jaar.
+                            Als je al wat kennis hebt over onderwerpen die terugkomen in de opleiding, kun je na een halfjaar kiezen om het versneltraject te volgen.
+                        </p>
+                        <img class="image_blokken" src="styling/img/Opleidingsoverzicht3.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 5</div>
+                        <h1>Vakken</h1>
+                        <h3>dit zijn de vakken die voorkomen in <span class="vakken_blok">Blok A</span> en <span class="vakken_blok">BlokB</span></h3>
+                        <div class="vakken">
+                            <div class="vak">
+                                <h3>Rekenen</h3>
+                                <h4>Verschillende rekenvaardigheden voor ontwikkeling.</h4>
+                            </div>
+                            <div class="vak">
+                                <h3>Nederlands</h3>
+                                <h4>Verschillende taalvaardigheden voor ontwikkeling.</h4>
+                            </div>
+                            <div class="vak">
+                                <h3>NATIVE</h3>
+                                <h4>Introductie in native development voor mobiele apps.</h4>
+                            </div>
+                            <div class="vak">
+                                <h3>WEB</h3>
+                                <h4>Bouw en style websites met HTML en CSS.</h4>
+                            </div>
+                            <div class="vak">
+                                <h3>JavaScript</h3>
+                                <h4>Leer de basis van programmeren met JavaScript.</h4>
+                            </div>
+                            <div class="vak">
+                                <h3>Databases</h3>
+                                <h4>Begrijp databases en leer hoe je data kunt beheren.</h4>
+                            </div>
+                            <div class="vak">
+                                <h3>DIV</h3>
+                                <h4>Digitale vaardigheden is een keuzevak waar je met office leert.</h4>
+                            </div>
+                            <div class="vak">
+                                <h3>Webontwikkeling</h3>
+                                <h4>Bouw volledige webapplicaties van front-end tot back-end.</h4>
+                            </div>
+                            <div class="vak">
+                                <h3>Pro & Pra</h3>
+                                <h4>Praktijkopdrachten om echte ervaring op te doen.</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade num4">
+                        <div class="numbertext">4 / 5</div>
+                        <h1>Rooster</h1>
+                        <h3>dit is een voorbeeld rooster</h3>
+                        <img src="styling/img/Rooster.png" alt="">
+
+                    </div>
+
+                    <div class="mySlides fade num5">
+                        <div class="numbertext">5 / 5</div>
+                        <h1>docenten</h1>
+                        <h3>dit zijn een aantal van onze docenten</h3>
+                        <div class="docenten-grid">
+                            <div class="docent">
+                                <h3>Ine Vermeer</h3>
+                                <h4></h4>
+                                <div class="img-docent">
+                                    <img class="img-docent" src="styling/img/ine.jpg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="docent">
+                                <h3>Steven van Roosendaal</h3>
+                                <h4></h4>
+                                <div class="img-docent">
+                                    <img class="img-docent" src="styling/img/steven.jpg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="docent">
+                                <h3>Mustafa Kasar</h3>
+                                <h4></h4>
+                                <div class="img-docent">
+                                    <img class="img-docent" src="styling/img/kazar.webp" alt="">
+                                </div>
+
+                            </div>
+                            <div class="docent">
+                                <h3>Eva van Os</h3>
+                                <h4></h4>
+                                <div class="img-docent">
+                                    <img class="img-docent" src="styling/img/eva.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="docent">
+                                <h3>Joep van Gils</h3>
+                                <h4></h4>
+                                <div class="img-docent">
+                                    <img class="img-docent" src="styling/img/joep.jpg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="docent">
+                                <h3>Michel Meeuwesen</h3>
+                                <h4></h4>
+                                <div class="img-docent">
+                                    <img class="img-docent" src="styling/img/michel.jpg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="docent">
+                                <h3>Bart Kouwenberg</h3>
+                                <h4></h4>
+                                <div class="img-docent">
+                                    <img class="img-docent" src="styling/img/bart.jpg" alt="">
+                                </div>
+
+                            </div>
+                            <div class="docent">
+                                <h3>Elton Boekhoudt</h3>
+                                <h4></h4>
+                                <div class="img-docent">
+                                    <img class="img-docent" src="styling/img/elton.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="docent">
+                                <h3>Quincy</h3>
+                                <h4></h4>
+                                <div class="img-docent">
+                                    <img class="img-docent" src="styling/img/quincy.png" alt="">
+                                </div>
+
+                            </div>
+                            <div class="docent">
+                                <h3>Armando</h3>
+                                <h4></h4>
+                                <div class="img-docent">
+                                    <img src="styling/img/armando.png" alt="">
+                                </div>
+
+                            </div>
+
+                
+    
+                        </div>
+
+                    </div>
+
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+
+
+
+                <!-- Dots to indicate the current slide -->
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+
+
+
+                <script src="script.js"></script>
+
+
+
+            </main>
+            <footer>
+                <p>&copy; 2024 Daan van Yperen. Alle rechten voorbehouden.</p>
+            </footer>
+        </div>
+    </body>
+    <script>
+
+    </script>
+</html>
